@@ -250,24 +250,6 @@ const IconMail: React.FC<IconProps> = ({ className }) => (
     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
   </svg>
 );
-const IconExternalLink: React.FC<IconProps> = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-    <polyline points="15 3 21 3 21 9"></polyline>
-    <line x1="10" y1="14" x2="21" y2="3"></line>
-  </svg>
-);
 const IconMenu: React.FC<IconProps> = ({ className }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -724,26 +706,6 @@ const Projects: React.FC = () => {
                 ))}
               </div>
             </div>
-            {/* <div
-              className={`${currentTheme.cardBg}/50 flex items-center justify-end gap-4 mt-auto p-6 border-t ${currentTheme.borderColor}`}
-            >
-              <a
-                href={project.repoUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${currentTheme.textSecondary} ${currentTheme.textTertiaryHover} transition-colors`}
-              >
-                <IconGithub className="w-6 h-6" />
-              </a>
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`${currentTheme.textSecondary} ${currentTheme.textTertiaryHover} transition-colors`}
-              >
-                <IconExternalLink className="w-6 h-6" />
-              </a>
-            </div> */}
           </div>
         ))}
       </div>
